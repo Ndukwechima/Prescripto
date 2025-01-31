@@ -14,3 +14,8 @@
 ::-webkit-scrollbar {
   @apply hidden
 }
+
+
+/* @utility gridTemplateColumns {
+  : repeat(auto-fill, minmax(200px, 1fr));
+} */
