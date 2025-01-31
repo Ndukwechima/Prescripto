@@ -9,7 +9,7 @@ const Navbar = () => {
     const [token, setToken] = useState(true);
 
   return (
-    <div
+    <nav
       className="flex items-center justify-between text-sm py-4 mb-5
      border-b border-b-gray-400"
     >
@@ -65,7 +65,7 @@ const Navbar = () => {
           </button>
         )}
       </div>
-    </div>
+    </nav>
   );
 }
 
