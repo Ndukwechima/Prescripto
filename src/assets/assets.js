@@ -282,6 +282,21 @@ export const doctors = [
             line2: 'Circle, Ring Road, London'
         }
     },
+
+     {
+        _id: 'doc14',
+        name: 'Dr. Ryan Martinez',
+        image: doc14,
+        speciality: 'Gynecologist',
+        degree: 'MBBS',
+        experience: '3 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 60,
+        address: {
+            line1: '27th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
     {
         _id: 'doc15',
         name: 'Dr. Amelia Hill',
