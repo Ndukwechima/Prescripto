@@ -13,9 +13,14 @@ const Navbar = () => {
       className="flex items-center justify-between text-sm py-4 mb-5
      border-b border-b-gray-400"
     >
-      <img className="cursor-pointer" onClick={()=> navigate('/')} src={assets.logo} alt="logo" />
+      <img
+        className="cursor-pointer"
+        onClick={() => navigate("/")}
+        src={assets.logo}
+        alt="logo"
+      />
 
-      <ul className="hidden md:flex items-start gap-8 font-medium">
+      <ul className="hidden md:flex items-start text-(--primary-color) gap-8 font-medium">
         <NavLink to="/">
           <li className="py-1">HOME</li>
           <hr className="border-none outline-none h-0.5 bg-(--primary-color) w-3/5 m-auto hidden" />
@@ -46,13 +51,32 @@ const Navbar = () => {
               src={assets.dropdown_icon}
               alt="dropdown_icon"
             />
-            <div className="absolute top-0 right-0 pt-14 text-base font-medium 
-            text-gray-600 z-20 hidden group-hover:block">
-              <div className="min-w-48 bg-stone-100 rounded flex flex-col gap-4
-               p-4">
-                <p onClick={() => navigate('/my-profile')} className="hover:text-black cursor-pointer">My Profile</p>
-                <p onClick={() => navigate('/my-appointments')} className="hover:text-black cursor-pointer">My Appointments</p>
-                <p onClick={() => setToken(false)} className="hover:text-black cursor-pointer">Logout</p>
+            <div
+              className="absolute top-0 right-0 pt-14 text-base font-medium 
+            text-gray-600 z-20 hidden group-hover:block"
+            >
+              <div
+                className="min-w-48 bg-stone-100 rounded flex flex-col gap-4
+               p-4"
+              >
+                <p
+                  onClick={() => navigate("/my-profile")}
+                  className="hover:text-black cursor-pointer"
+                >
+                  My Profile
+                </p>
+                <p
+                  onClick={() => navigate("/my-appointments")}
+                  className="hover:text-black cursor-pointer"
+                >
+                  My Appointments
+                </p>
+                <p
+                  onClick={() => setToken(false)}
+                  className="hover:text-black cursor-pointer"
+                >
+                  Logout
+                </p>
               </div>
             </div>
           </div>
