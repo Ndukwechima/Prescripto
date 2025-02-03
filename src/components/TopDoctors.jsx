@@ -25,11 +25,11 @@ const TopDoctors = () => {
               scrollTo(0, 0);
             }}
             key={index}
-            className="border border-blue-200 rounded-xl overflow-hidden
+            className="border border-purple-200 rounded-xl overflow-hidden
           cursor-pointer hover:translate-y-[-10px] transition-all duration-500 ease-in-out"
           >
             <img
-              className="w-full bg-blue-50"
+              className="w-full bg-purple-100"
               src={item.image}
               alt={item.name}
             />
@@ -49,7 +49,7 @@ const TopDoctors = () => {
           navigate("/doctors");
           scrollTo(0, 0);
         }}
-        className="bg-blue-50 text-gray-600 px-12 py-3
+        className="bg-purple-100 text-gray-600 px-12 py-3
       rounded-full mt-10"
       >
         more
